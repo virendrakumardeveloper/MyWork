@@ -1,0 +1,81 @@
+html,body{ height:100%; }
+.main-section{ position:relative; width:100%; height:100%;}
+
+.hero-bkg-animated {
+  background: gray url(bg.jpg) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -1000px 0; }
+}
+
+/* Standard syntax */
+@keyframes example{
+  from { height:0px;}
+  to { height: 300px;}
+}
+
+.white-box{
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  bottom:0px;
+  position:absolute; 
+  left:0px;
+  z-index:99;
+}
+
+.team h3{ color:#ffff; font-size:30px; margin-top:32%; font-weight:bold; margin-bottom:80px;}
+.team h3 span{ position:relative; }
+/*.team h3 span:after{ content:''; position:absolute; bottom:-10px; left:0px; width:100%; height:2px; background:red; }*/
+
+.middle-piller{   -webkit-animation-name: middle-piller; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: middle-piller;
+  animation-duration: 2s; width:200px; bottom:0px; height:100%; z-index:9999; position:absolute; margin:0 auto; right:0px; left:0px;
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(22,174,236,1));
+  }
+
+
+/* Standard syntax */
+@keyframes middle-piller{
+  from { height:0%;}
+  to { height: 100%;}
+}
+
+.profile-box{ margin-top:50px;}
+.profile-box h4{ font-weight:bold; font-size:18px;}
+.profile-box h5{ font-weight:bold; font-size:15px;}
+
+.team-members{ position:relative; }
+.team-members h4{ margin-top:20px; font-weight:bold; font-size:18px; color:#fff;}
+.team-members h5{ font-weight:bold; font-size:15px; color:#fff; }
+.team-members p{ color:#fff;}
+.team-profile{ display:none; }
+
+ .animated {
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+	 }
+	 
+.team-profile{ position:relative; z-index:99999; top:178px;}	
+.team-profile  .col-md-2{ position:static; }
+.team-profile  .col-md-2 img{ position:absolute; left:0px; right:0px; margin:0 auto; transition:2s;}
+.team-members .member{ position:absolute; left:0px; right:0px; margin: 0 auto;}	 
+	 
+	 
+	 
